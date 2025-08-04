@@ -1,11 +1,13 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
+import platform
 import streamlit as st
 from app.services.web_scraper import WebScraper
 from app.services.metrics_extractor import ArticleAnalyzer
 from app.services.dashboard_generator import DashboardGenerator
+
+st.write(f"Python version: {platform.python_version()}")
 
 st.set_page_config(page_title="AI Research Dashboard", layout="wide")
 st.title("🧠 AI-Powered Research Summarizer")
