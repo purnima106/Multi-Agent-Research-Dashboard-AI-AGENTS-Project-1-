@@ -1,0 +1,10 @@
+streamlit
+spacy
+transformers
+wordcloud
+matplotlib
+pandas
+textblob
+scikit-learn
+duckduckgo-search
+newspaper3k

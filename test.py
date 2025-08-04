@@ -1,14 +1,13 @@
-from app.models.insight_agent import InsightAgent
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
-agent = InsightAgent()
 
-texts = [
-    "Artificial Intelligence is transforming healthcare and enabling better diagnostics.",
-    "AI is being used in finance to predict market trends and manage risks efficiently."
-]
+from app.services.web_scraper import WebScraper
 
-insights = agent.generate_insights(texts)
+scraper = WebScraper(num_results=2)
+results = scraper.get_articles_content("AI in medical diagnostics")
 
-print("\nGenerated Insights:")
-for idx, i in enumerate(insights, 1):
-    print(f"{idx}. {i}")
+for i, article in enumerate(results):
+    print(f"\nArticle {i+1}: {article['url']}")
+    print(article['content'][:500])  # Print first 500 chars only
