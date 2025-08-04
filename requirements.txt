@@ -10,3 +10,5 @@ duckduckgo-search
 newspaper3k
 lxml[html_clean]
 lxml-html-clean
+torch
+
