@@ -2,7 +2,7 @@ from transformers import pipeline
 
 class ArticleAnalyzer:
     def __init__(self):
-        self.summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
+        self.summarizer = pipeline("summarization", model="Falconsai/text_summarization")
         self.qa = pipeline("question-answering")
 
     def summarize_text(self, text, max_tokens=1024):
