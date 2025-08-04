@@ -1,12 +1,11 @@
 streamlit
 transformers
 spacy
-textblob
 wordcloud
 matplotlib
 pandas
+textblob
 scikit-learn
 duckduckgo-search
 newspaper3k
-lxml
-lxml_html_clean
+lxml[html_clean]
