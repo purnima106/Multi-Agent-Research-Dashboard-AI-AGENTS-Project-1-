@@ -5,6 +5,9 @@ This open-source project lets users input any research topic and generates:
 - 📝 AI-generated summaries & insights
 - 📊 Automatic dashboards (word clouds, keyword bars, sentiment scores)
 
+#Deployment Link: 
+https://purnima106-multi-agent-research-dashb-appuistreamlit-app-t8u4lp.streamlit.app/
+
 All powered by Python, LLMs, and Streamlit. No API keys required!
 
 ---
